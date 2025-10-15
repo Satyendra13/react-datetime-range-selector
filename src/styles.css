@@ -1,0 +1,217 @@
+.dts-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dts-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.dts-input:focus {
+    outline: none;
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.dts-dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 12px;
+    z-index: 1000;
+    min-width: 320px;
+}
+
+.dts-quick-select {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dts-quick-btn {
+    padding: 4px 12px;
+    border: 1px solid #0d6efd;
+    background: white;
+    color: #0d6efd;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.dts-quick-btn:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+.dts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.dts-nav-btn {
+    background: white;
+    border: 1px solid #dee2e6;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.dts-nav-btn:hover {
+    background: #f8f9fa;
+}
+
+.dts-month-year {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.dts-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.dts-weekday {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    color: #6c757d;
+    padding: 4px;
+}
+
+.dts-calendar {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.dts-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+}
+
+.dts-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.dts-day:hover:not(.dts-day-disabled) {
+    background: #f8f9fa;
+}
+
+.dts-day-other-month {
+    color: #adb5bd;
+}
+
+.dts-day-disabled {
+    color: #dee2e6;
+    cursor: not-allowed;
+}
+
+.dts-day-selected {
+    background: #0d6efd;
+    color: white;
+    font-weight: 600;
+}
+
+.dts-day-in-range {
+    background: rgba(13, 110, 253, 0.15);
+}
+
+.dts-day-range-start,
+.dts-day-range-end {
+    background: #0d6efd;
+    color: white;
+    font-weight: 600;
+}
+
+.dts-time-picker {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+}
+
+.dts-time-column {
+    flex: 1;
+}
+
+.dts-time-label {
+    font-weight: 600;
+    font-size: 12px;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #6c757d;
+}
+
+.dts-time-list {
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+}
+
+.dts-time-item {
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s;
+}
+
+.dts-time-item:hover {
+    background: #f8f9fa;
+}
+
+.dts-time-selected {
+    background: #0d6efd;
+    color: white;
+    font-weight: 600;
+}
+
+.dts-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #dee2e6;
+}
+
+.dts-confirm-btn {
+    padding: 6px 20px;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.dts-confirm-btn:hover {
+    background: #0b5ed7;
+}
