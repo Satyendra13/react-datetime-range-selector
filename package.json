@@ -1,5 +1,5 @@
 {
-    "name": "react-datetime-range-selector",
+    "name": "datetime-range-selector",
     "version": "1.0.0",
     "description": "A flexible React date and time range selector component with multiple modes and Bootstrap 5 support",
     "main": "dist/index.js",
