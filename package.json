@@ -1,5 +1,5 @@
 {
-    "name": "datetime-range-selector",
+    "name": "react-datetime-range-selector",
     "version": "1.0.0",
     "description": "A flexible React date and time range selector component with multiple modes and Bootstrap 5 support",
     "main": "dist/index.js",
@@ -19,7 +19,7 @@
         "datetime",
         "bootstrap"
     ],
-    "author": "Your Name",
+    "author": "Satyendra",
     "license": "MIT",
     "peerDependencies": {
         "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
