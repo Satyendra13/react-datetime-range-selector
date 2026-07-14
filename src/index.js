@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import moment from 'moment';
-import './styles.css';
+import './styles.css'
 
 const DateTimeSelector = ({
     mode = 'single', // 'single', 'datetime', 'time', 'range'
